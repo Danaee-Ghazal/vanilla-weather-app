@@ -110,8 +110,30 @@ function handleSubmit(event) {
   let cityInputElement = document.querySelector("#city-input");
   search(cityInputElement.value);
 }
+// function displayFaren(event) {
+//   event.preventDefault();
+//   let temp = document.querySelector("#temperature");
+//   celLink.classList.remove("deactive");
+//   farenLink.classList.add("deactive");
+//   let farentemp = (celsiusTemperature * 9) / 5 + 32;
+//   temp.innerHTML = farentemp;
+// }
+// function displaycel(event) {
+//   event.preventDefault();
+//   let temp = document.querySelector("#temperature");
+//   celLink.classList.add("deactive");
+//   farenLink.classList.remove("deactive");
+//   temp.innerHTML = celsiusTemperature;
+// }
+
+// let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+// let celLink = document.querySelector("#cel");
+// let farenLink = document.querySelector("#faren");
+// celLink.addEventListener("click", displaycel);
+// farenLink.addEventListener("click", displayFaren);
 
 search("New York");
